@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>| Cricket Game |</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      h3{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: xx-large;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Cricket GAME</h1>
+    
+    <button
+      id="bat"
+      onclick="console.log('Yo choose to bat !'); 
+      let choice=random();
+      let res =result('bat',choice);
+      showResult('bat',choice,res);
+      "
+    >
+      <img src="bat.avif" alt="bat image">
+    </button>
+
+    <button
+      id="ball"
+      onclick="console.log('Yo choose to ball !');
+      choice=random();
+       res =result('ball',choice);
+      showResult('ball',choice,res);"
+    >
+    <img src="ball.jpg" alt="bat image">
+    </button>
+
+    <button
+      id="stump"
+      onclick="console.log('You choose to stump !');
+      choice=random();
+       res =result('stump',choice);
+      showResult('stump',choice,res);"
+    >
+    <img src="stump.jpg" alt="bat image">
+  </button>
+    <br>
+  
+    <h3 id="user-move"></h3>
+    <h3 id="computer-move"></h3>
+    <h3 id="result"></h3>
+    <h3 id="score"></h3>
+    <br>
+    <button
+      
+    onclick="localStorage.clear()
+    reset()
+    "
+  >
+    RESET
+  </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

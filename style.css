@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  text-align: center;
+  padding: 50px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Main heading style */
+h1 {
+  font-size: 3rem;
+  color: #003366;
+  margin-top: 30px;
+  text-shadow: 2px 2px 5px #cce7ff;
+  letter-spacing: 2px;
+}
+
+/* Subheadings (Results, Score, etc.) */
+h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin: 10px 0;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* Button Styling */
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0);
+}
+
+button:active {
+  transform: scale(0.99);
+}
+
+button:focus {
+  outline: none;
+  transform: scale(1.05);
+}
+
+/* Images inside buttons */
+button img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+button img:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Reset button */
+button:last-of-type {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Button container for better mobile layout */
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  button img {
+    width: 70px;
+    height: 70px;
+  }
+
+  button:last-of-type {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
